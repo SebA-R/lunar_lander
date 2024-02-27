@@ -60,6 +60,8 @@ public class Canvas {
         int length = terrain.length;
         StringBuilder[] canvas = new StringBuilder[length];
         StringBuilder stringCanvas = new StringBuilder();
+        String credit = "Lunar Lander by SebAR 2024\n";
+        credit = " ".repeat(length-credit.length()) + credit;
 
         // Create a list to store the platforms
         List<Platform> platforms = new ArrayList<>();
@@ -125,7 +127,7 @@ public class Canvas {
             stringCanvas.append("\n"); 
         }
 
-        return stringCanvas.toString();
+        return credit+stringCanvas.toString();
     }
     
 
